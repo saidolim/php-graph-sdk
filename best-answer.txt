@@ -1,0 +1,31 @@
+Best Answer chosen by rondvorak
+Collapse -
+Solved
+by rondvorak / January 14, 2014 1:13 PM PST
+In reply to: How do I post to Facebook from my website?
+I found an example on the Facebook site that I can use to solve my problem. For the benefit of others that might want to do the same thing, I'll explain what I did. First I got the example included with the PHP SDK to work, then I added an example that posts a message to Facebook to the SDK example folder. Perhaps someone looking to drive traffic to their site can expand upon my instructions and create a quality tutorial. Here are the details:
+
+
+Example from the SDK(simple connect)
+============================= 
+1. Download the zip file with the PHP SDK, including the examples
+- https://github.com/facebook/facebook-php-sdk
+2. Go to https://developers.facebook.com/
+3. Select "Apps | Create a New App" from the top menu
+4. Enter a Display Name and select a category(I chose "Apps for Pages" but I don't know if it matters).
+5. Click create App and get click through the captch form.
+6. Click settings on the left side menu
+7. Click "+ Add Platform" and select "Website"
+8. For the "Site URL", enter the of for the folder containing the example
+9. Get the App ID and App Secret at the top portion of the page and enter it into the example program.
+10. Test the example to make sure it works
+
+Example that posts a message(and link) to Facebook
+=======================================
+1. Go to https://developers.facebook.com/docs/php/howto/postwithgraphapi
+2. Create post_links.php(call it whatever you want) in the same directory as example.php 
+3. Enter the App ID and App Secret(same as for example.php) into post_links.php
+4. In example.php, change require_once('../src/facebook.php'); to require_once('php-sdk/facebook.php');
+5. Upload and test
+
+Thank you Sovereign for your help, much appreciated.
